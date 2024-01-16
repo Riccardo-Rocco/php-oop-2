@@ -1,13 +1,14 @@
-
-
 <?php
-class Product {
-    protected $name;
-    protected $price;
 
-    public function __construct($name, $price) {
+class Product {
+    private $name;
+    private $price;
+    private $category;
+
+    public function __construct($name, $price, $category) {
         $this->name = $name;
         $this->price = $price;
+        $this->category = $category;
     }
 
     public function getName() {
@@ -16,6 +17,14 @@ class Product {
 
     public function getPrice() {
         return $this->price;
+    }
+
+    public function getCategory() {
+        return $this->category;
+    }
+
+    public function getProductType() {
+        return 'Prodotto Generico';
     }
 }
 

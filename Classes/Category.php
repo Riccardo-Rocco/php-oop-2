@@ -1,8 +1,7 @@
-
-
 <?php
+
 class Category {
-    protected $name;
+    private $name;
 
     public function __construct($name) {
         $this->name = $name;
@@ -11,5 +10,10 @@ class Category {
     public function getName() {
         return $this->name;
     }
+
+    public function getTag() {
+        return $this->tag;
+    }
 }
+
 ?>

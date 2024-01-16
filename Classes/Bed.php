@@ -1,8 +1,8 @@
 <?php
 
-class Food extends Product {
+class Bed extends Product {
     public function getProductType() {
-        return 'Cibo';
+        return 'Cuccia';
     }
 }
 
